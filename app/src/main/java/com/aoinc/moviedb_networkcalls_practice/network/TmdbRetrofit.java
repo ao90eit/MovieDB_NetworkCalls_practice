@@ -20,7 +20,7 @@ public class TmdbRetrofit {
         return tmdbRetrofitSingleton;
     }
 
-    public TmdbRetrofit() {
+    private TmdbRetrofit() {
         this.tmdbNetworkService = createTmdbNetworkService(createRetrofit());
     }
 
